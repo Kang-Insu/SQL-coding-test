@@ -1,6 +1,6 @@
 -- 코드를 입력하세요
-SELECT USER_ID, PRODUCT_ID
-FROM ONLINE_SALE
-GROUP BY 1,2
-HAVING COUNT(PRODUCT_ID) > 1
-ORDER BY 1,2 DESC;
+SELECT user_id, product_id
+FROM online_sale
+GROUP BY user_id, product_id
+HAVING COUNT(product_id) > 1
+ORDER BY 1, 2 desc;
